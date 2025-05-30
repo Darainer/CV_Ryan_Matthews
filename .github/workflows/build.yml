@@ -1,4 +1,3 @@
-
 name: Build PDF
 
 on:
@@ -21,7 +20,7 @@ jobs:
         root_file: main.tex
 
     - name: Upload PDF
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         name: ryan-matthews-cv
         path: main.pdf
