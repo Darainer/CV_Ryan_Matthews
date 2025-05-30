@@ -1,4 +1,4 @@
-% This is a LaTeX document for a CV/Resume
+
 \documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -7,106 +7,121 @@
 \usepackage{graphicx}
 \usepackage{parskip}
 \usepackage{titlesec}
-\usepackage{color}
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{fontawesome5}
+\usepackage{setspace}
+\usepackage{titling}
 
-\titleformat{\section}{\large\bfseries\uppercase}{\thesection}{1em}{}
-\titleformat{\subsection}[runin]{\bfseries}{\thesubsection}{0.5em}{}[.]
+% Color settings
+\definecolor{primary}{RGB}{0, 79, 144}
+\definecolor{accent}{RGB}{50, 50, 50}
 
-\pagestyle{empty}
+% Section formatting
+\titleformat{\section}
+  {\Large\bfseries\color{primary}}{}{0em}{}
+\titleformat{\subsection}[runin]
+  {\bfseries\color{primary}}{}{0em}{}[.]
+
+% Spacing between items
+\setlist[itemize]{itemsep=4pt, topsep=4pt}
+
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    urlcolor=blue
+    linkcolor=primary,
+    urlcolor=primary
 }
+
+\pagestyle{empty}
 
 \begin{document}
 
-% Header with image
-\begin{minipage}[t]{0.7\textwidth}
+% Header
+\begin{minipage}[c]{0.68\textwidth}
     \textbf{\LARGE Ryan Matthews}\\
     \vspace{0.1cm}
     \href{mailto:ryanjmatthews@gmail.com}{ryanjmatthews@gmail.com} \quad
     \href{https://linkedin.com/in/ryan-j-matthews}{LinkedIn} \quad
     \href{https://github.com/Darainer}{GitHub} \quad
     +49 176 34599887\\
-    \vspace{0.3cm}
+
+    \vspace{10pt}
+    \small
     Engineering leader with over 10 years of experience in automated driving development, delivering business outcomes in both technical and product leadership roles. Passionate about building commercially successful software and AI rich products.
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.25\textwidth}
+\begin{minipage}[c]{0.28\textwidth}
     \includegraphics[width=\linewidth]{profile_pic_ryan.png}
 \end{minipage}
 
-\vspace{0.5cm}
+\vspace{1.2em}
 
+% Work Experience
 \section*{Work Experience}
 
-\textbf{SYSTEM ARCHITECT ADAS/AD}, Luminar, Munich \hfill \textit{Jul 2022 – Present}\\
-\begin{itemize}[leftmargin=*]
+\subsection*{System Architect ADAS/AD, Luminar, Munich \hfill \textit{Jul 2022 – Present}}
+\begin{itemize}
     \item Provide technical direction for the product portfolio, encompassing Software, SoC, and Lidar.
-    \item Successfully drove structural changes in software product strategy by analyzing shifts in customer sourcing trends, influenced by the adoption of novel deep learning architectures.
+    \item Drove structural changes in software strategy in response to AI-centric sourcing trends.
     \item Designed and socialized a software toolchain to support multidisciplinary development.
 \end{itemize}
 
-\textbf{PRODUCT OWNER ACTIVE SAFETY}, Luminar, Munich \hfill \textit{Sep 2020 – Jun 2022}\\
-\begin{itemize}[leftmargin=*]
-    \item Led the greenfield development of a lidar-only, NCAP 2023 compliant active safety software stack and successfully demonstrated at \href{https://ces.tech}{CES 2022} and further innovations in \href{https://ces.tech}{CES 2023}.
-    \item Outlined, aligned and executed on product vision to push state of the art in active safety.
-    \item Built a high performing ADAS team from a group of developers without domain knowledge.
+\subsection*{Product Owner Active Safety, Luminar, Munich \hfill \textit{Sep 2020 – Jun 2022}}
+\begin{itemize}
+    \item Led NCAP 2023-compliant Lidar-only active safety stack.
+    \item Demonstrated solution at \href{https://ces.tech}{CES 2022} and \href{https://ces.tech}{CES 2023}.
+    \item Built and mentored a high-performing ADAS development team.
 \end{itemize}
 
-\textbf{PRODUCT OWNER ADAS}, Samsung Electronics, Munich \hfill \textit{Apr 2019 – Sep 2020}\\
-\begin{itemize}[leftmargin=*]
-    \item Led the camera-only AEB NCAP 2022+ product development for Samsung SoC based solution.
-    \item Technical direction for algorithm development on the full end to end software chain.
+\subsection*{Product Owner ADAS, Samsung Electronics, Munich \hfill \textit{Apr 2019 – Sep 2020}}
+\begin{itemize}
+    \item Led camera-only AEB NCAP 2022+ product development for Samsung SoC.
+    \item Directed algorithm development across full software chain.
 \end{itemize}
 
-\textbf{SENIOR DEVELOPER}, Zenuity (JV Volvo / Autoliv), Munich \hfill \textit{Mar 2018 – Mar 2019}\\
-\begin{itemize}[leftmargin=*]
-    \item Led the successful migration of the existing codebase into a modern CI/CD environment and the transition to data driven feature development.
-    \item Delivered on key business outcome to have daily KPI evaluation on the data lake.
-    \item Provided local mentoring for ADAS function and algorithm development.
+\subsection*{Senior Developer, Zenuity (Volvo / Autoliv JV), Munich \hfill \textit{Mar 2018 – Mar 2019}}
+\begin{itemize}
+    \item Migrated CI/CD environment and introduced data-driven development.
+    \item Enabled daily KPI evaluations via cloud data lake pipeline.
 \end{itemize}
 
-\textbf{LEAD FEATURE DEVELOPER}, Autoliv Electronics, Munich \hfill \textit{Oct 2016 – Mar 2018}\\
-\begin{itemize}[leftmargin=*]
-    \item Developed robust tracking and control algorithms for a novel camera-only ACC system.
-    \item Successfully demonstrated system to OEM customers, resulting in program business wins.
+\subsection*{Lead Feature Developer, Autoliv Electronics, Munich \hfill \textit{Oct 2016 – Mar 2018}}
+\begin{itemize}
+    \item Developed tracking/control algorithms for novel camera-only ACC.
+    \item Demos led to major OEM program wins.
 \end{itemize}
 
-\textbf{ENGINEERING CONSULTANT}, TESIS DYNAware, Munich \hfill \textit{Feb 2011 – Sep 2016}\\
-\begin{itemize}[leftmargin=*]
-    \item Technical project management up to 10 team members and > \$1 million budget.
-    \item Consistently successful in securing contract extensions and acquisition of new software customers.
-    \item Developed vehicle functions and algorithms for ADAS + ESP applications (German OEMs/ Tier1s).
+\subsection*{Engineering Consultant, TESIS DYNAware, Munich \hfill \textit{Feb 2011 – Sep 2016}}
+\begin{itemize}
+    \item Managed projects exceeding \$1M budget with 10-person teams.
+    \item Delivered ADAS and ESP algorithms to Tier 1s and German OEMs.
 \end{itemize}
 
-\textbf{MECHATRONIC ENGINEER}, Australian Submarine Corporation, Perth \hfill \textit{Jan 2007 – Apr 2010}\\
-\begin{itemize}[leftmargin=*]
-    \item Submarine control system design and in-service support on operational submarines.
+\subsection*{Mechatronic Engineer, Australian Submarine Corporation, Perth \hfill \textit{Jan 2007 – Apr 2010}}
+\begin{itemize}
+    \item Designed and supported submarine control systems.
 \end{itemize}
 
-\vspace{0.4cm}
+\vspace{1.2em}
 
+% Education
 \section*{Education}
 
-\textbf{B.Eng (Hons), Mechatronic Engineering}, University of Adelaide\\
-First Class Honours, Dean's List, Aerospace Project Award
+\textbf{B.Eng (Hons), Mechatronic Engineering}, University of Adelaide \\
+\textit{First Class Honours, Dean's List, Aerospace Project Award} \\[4pt]
+\textbf{Bachelor of Economics}, University of Adelaide \\
+\textit{Major in mathematical modelling and statistics}
 
-\textbf{Bachelor of Economics}, University of Adelaide\\
-Major in mathematical modelling and statistical analysis
+\vspace{1.2em}
 
-\vspace{0.4cm}
-
+% Skills
 \section*{Skills}
 C++, Python, Model-Based Design, ISO 26262, AUTOSAR, Agile Product Ownership
 
-\vspace{0.4cm}
+\vspace{1.2em}
 
+% Languages
 \section*{Languages}
 English (Native), German (Full Professional)
 
