@@ -1,0 +1,161 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{url}
+\usepackage{parskip}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[style=authoryear,sorting=ynt,maxbibnames=2]{biblatex}
+\usepackage[unicode, draft=false]{hyperref}
+\usepackage{fontawesome5}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\setlength\bibitemsep{1em}
+\addbibresource{citations.bib}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill & #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}
+    }
+
+\begin{document}
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%	HEADER
+%----------------------------------------------------------------------------------------
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{\textbf{Ryan Matthews}} \\[7.5pt]
+\href{https://linkedin.com/in/ryan-j-matthews}{\raisebox{-0.05\height}\faLinkedin\ /ryan-j-matthews} \ $|$ \ 
+\href{https://github.com/Darainer}{\raisebox{-0.05\height}\faGithub\ Darainer} \ $|$ \
+\href{mailto:ryanjmatthews@gmail.com}{\raisebox{-0.05\height}\faEnvelope\ ryanjmatthews@gmail.com} \ $|$ \
+\href{tel:+4917634599887}{\raisebox{-0.05\height}\faMobile\ +49 176 3459 9887} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY
+%----------------------------------------------------------------------------------------
+
+\section{Summary}
+\begin{itemize}[nosep,leftmargin=1em,itemsep=3pt,label=--]
+\item Product and systems leader with 10+ years of experience in autonomous systems and ADAS development.
+\item Proven track record of defining commercially viable product visions, shaping scalable software architectures, and delivering successful customer programs.
+\item Unique blend of deep technical expertise in AI, software, and sensors with strong commercial acumen to bridge technology and business impact.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{joblong}{Program Lead – Perception Software, \textit{Luminar Technologies}}{Oct 2024 -- Present}
+\item Leading commercial and technical aspects of Luminar’s flagship perception software program, guiding delivery toward a vehicle production launch.
+\end{joblong}
+
+\begin{joblong}{ADAS Solution Architect, \textit{Luminar Technologies}}{Jul 2022 -- Oct 2024}
+\item Provided technical leadership in a growing software department across R\&D and productization of software, SoC, and lidar systems for ADAS/AD.
+\item Defined product and architecture boundaries to align the core platform with customer needs.
+\item Focused teams on commercially valuable functionality that resonated with OEMs, driving adoption and reuse.
+\end{joblong}
+
+\begin{joblong}{Product Lead – Active Safety Software, \textit{Luminar Technologies}}{Oct 2020 -- Sep 2022}
+\item Defined roadmap for a lidar-first approach to active safety and ADAS.
+\item Built and mentored a new software team, scaling safety-critical expertise from scratch.
+\item Delivered customer-facing demos (CES, IAA) that secured OEM interest and established Luminar’s software credibility.
+\end{joblong}
+
+\begin{joblong}{Product Owner – ADAS Collision Mitigation, \textit{Samsung Electronics}}{Apr 2019 -- Oct 2020}
+\item Led camera-only AEB NCAP 2022+ product development using Samsung SoC as the first safety-critical application.
+\item Directed algorithm development and SoC design to meet application performance and safety standards.
+\end{joblong}
+
+\begin{joblong}{Senior Software Engineer, \textit{Zenuity (Volvo / Autoliv JV)}}{Mar 2018 -- Apr 2019}
+\item Developed ADAS functions and algorithms for highway automation features (L1–L3).
+\item Introduced KPI-driven, data-based software validation on global datasets.
+\end{joblong}
+
+\begin{joblong}{Technical Lead – ADAS Functions, \textit{Autoliv Electronics}}{Oct 2016 -- Mar 2018}
+\item Led ADAS algorithm R\&D for camera-only highway cruising functions.
+\item Delivered successful OEM demos resulting in major program wins.
+\end{joblong}
+
+\begin{joblong}{Technical Lead / Simulation Specialist, \textit{TESIS DYNAware}}{Apr 2011 -- Sep 2016}
+\item Managed software projects exceeding \$1M budget with >10-person teams for ADAS and hybrid drivetrain simulation.
+\item Delivered software solutions to major Tier 1 and OEM customers.
+\end{joblong}
+
+\begin{joblong}{Mechatronic Engineer, \textit{Australian Submarine Corporation}}{Jan 2007 -- Apr 2010}
+\item Designed and supported submarine control systems on active Royal Australian Navy submarines.
+\end{joblong}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{B.Eng (Hons), Mechatronic Engineering} & University of Adelaide \\
+& \textit{First Class Honours, Dean's List, Aerospace Project Award} \\[4pt]
+\textbf{Bachelor of Economics} & University of Adelaide \\
+& \textit{Major in Mathematical Modelling and Statistics}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Programming & C, C++, Python, MATLAB/Simulink \\
+Tooling \& Standards & ISO 26262, ISO 21448 (SOTIF), AUTOSAR C++14, CI/CD \\
+Domains & ADAS/AD, Perception, Lidar, AI, SoC, Product Strategy \\
+Soft Skills & Product Leadership, Technical Direction, Customer Engagement, Team Building
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	FURTHER EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Further Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2024 & Deep Learning Specialization — \href{https://www.deeplearning.ai}{DeepLearning.AI} \\
+2023 & Creative Leadership Certificate — \href{https://mvr.de}{MVR.DE} \\
+2022 & Modern C++ Training — \href{https://klaus-iglberger.com}{Klaus Iglberger} \\
+2020 & Professional Scrum Product Owner — \href{https://scrum.org}{Scrum.org} \\
+2017 & Certified Scrum Master — \href{https://scrumalliance.org}{Scrum Alliance} \\
+2014 & Project Management Professional (PMP\textsuperscript{\textregistered}) — \href{https://www.pmi.org}{PMI}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+English (Native), German (Full Professional)
+
+\vfill
+%\center{\footnotesize Last updated: \today}
+
+\end{document}
