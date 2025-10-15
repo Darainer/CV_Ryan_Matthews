@@ -16,6 +16,13 @@
 \usepackage[unicode, draft=false]{hyperref}
 \usepackage{fontawesome5}
 \usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\definecolor{primary}{RGB}{0,79,144}
+\definecolor{accent}{RGB}{50,50,50}
+\definecolor{accentgray}{RGB}{90,90,90}
+\definecolor{jobtitlegreen}{RGB}{0,128,96}
+
 
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
@@ -44,39 +51,40 @@
 
 \vspace*{-0.8cm}
 
+
 %----------------------------------------------------------------------------------------
-%	HEADER WITH PHOTO
+% HEADER WITH PHOTO AND SUMMARY SIDE-BY-SIDE
 %----------------------------------------------------------------------------------------
 
 \noindent
-\begin{minipage}[t]{0.70\textwidth}
-\vspace{0pt}
-\begin{tabularx}{\linewidth}{@{} l @{}}
-\hfill\Huge{\textbf{Ryan Matthews}}\hfill\mbox{} \\[7.5pt]
-\href{https://linkedin.com/in/ryan-j-matthews}{\raisebox{-0.05\height}\faLinkedin\ /ryan-j-matthews} \ $|$ \ 
-\href{https://github.com/Darainer}{\raisebox{-0.05\height}\faGithub\ Darainer} \ $|$ \\
-\href{mailto:ryanjmatthews@gmail.com}{\raisebox{-0.05\height}\faEnvelope\ ryanjmatthews@gmail.com} \ $|$ \
-\href{tel:+4917634599887}{\raisebox{-0.05\height}\faMobile\ +49 176 3459 9887} \\
-\end{tabularx}
-\end{minipage}%
-\hfill
-\begin{minipage}[t]{0.25\textwidth}
-\vspace{0pt}
-\includegraphics[width=\linewidth,clip,trim=0 0 0 0]{profile_pic_ryan.png}
+\begin{minipage}[t]{0.68\textwidth}
+    \vspace{0pt}
+    {\fontsize{24pt}{28pt}\selectfont\bfseries Ryan Matthews}\\[0.1cm]
+    {\small
+\faLinkedin\ \href{https://linkedin.com/in/ryan-j-matthews}{ryan-j-matthews} \quad|\quad
+\faEnvelope\ \href{mailto:ryanjmatthews@gmail.com}{ryanjmatthews@gmail.com} \\
+\faMobile\ +49\ 176\ 3459\ 9887 \quad|\quad
+\faGithub\ \href{https://github.com/Darainer}{Darainer}
+    }\\[0.05cm]
+
+    % --- Summary text ---
+\section{Summary}
+\vspace{-16pt}
+\small
+Product and systems leader with 10+ years of experience in autonomous systems and ADAS development. 
+Proven track record of defining commercially viable product visions, shaping scalable software architectures, and delivering successful customer programs. 
+Unique blend of deep technical expertise in AI, software, and sensors with strong commercial acumen to bridge technology and business impact.
+
+
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\textwidth}
+  \vspace{0pt}
+  \centering
+  \includegraphics[width=\linewidth]{profile_pic_ryan.png}
 \end{minipage}
 
-\vspace{1em}
 
-%----------------------------------------------------------------------------------------
-%	SUMMARY
-%----------------------------------------------------------------------------------------
-
-\section{Summary}
-\begin{itemize}[nosep,leftmargin=1em,itemsep=3pt,label=--]
-\item Product and systems leader with 10+ years of experience in autonomous systems and ADAS development.
-\item Proven track record of defining commercially viable product visions, shaping scalable software architectures, and delivering successful customer programs.
-\item Unique blend of deep technical expertise in AI, software, and sensors with strong commercial acumen to bridge technology and business impact.
-\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
