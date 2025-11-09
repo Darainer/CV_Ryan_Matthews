@@ -1,6 +1,6 @@
 # Ryan Matthews
 
-[![Download CV](https://img.shields.io/badge/Download-CV%20PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader)](https://github.com/Darainer/CV_Ryan_Matthews/raw/main/main.pdf)
+[![Download CV](https://img.shields.io/badge/Download-CV%20PDF-blue?style=for-the-badge&logo=adobe-acrobat-reader)](https://github.com/Darainer/CV_Ryan_Matthews/raw/main/Ryan_Matthews_CV.pdf)
 
 **Engineering leader with 10+ years in autonomous systems and robotics.** I define product direction in emerging technology spaces and guide multidisciplinary teams to deliver scalable autonomy platforms at commercial quality. I bring together deep technical expertise across perception, AI, and software platforms with the ability to align customer needs, technical feasibility, and strategic priorities. Focused on enabling the next wave of AI-augmented autonomy.
 
