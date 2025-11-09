@@ -36,14 +36,16 @@
 \newenvironment{joblong}[2]
     {
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill & #2 \\[3.75pt]
+    \textbf{#1} & \hfill & \textit{#2} \\[3.75pt]
     \end{tabularx}
+    \vspace{-0.5em}
     \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut,leftmargin=1em,itemsep=3pt,label=--]
     }
     {
     \end{itemize}
     \end{minipage}
+    \vspace{0.5em}
     }
 
 \begin{document}
@@ -59,32 +61,27 @@
 \noindent
 \begin{minipage}[t]{0.68\textwidth}
     \vspace{0pt}
-    {\fontsize{24pt}{28pt}\selectfont\bfseries Ryan Matthews}\\[0.1cm]
+    {\fontsize{24pt}{28pt}\selectfont\bfseries Ryan Matthews}\\[0.2cm]
     {\small
-\faLinkedin\ \href{https://linkedin.com/in/ryan-j-matthews}{ryan-j-matthews} \quad|\quad
-\faEnvelope\ \href{mailto:ryanjmatthews@gmail.com}{ryanjmatthews@gmail.com} \\
-\faMobile\ +49\ 176\ 3459\ 9887 \quad|\quad
-\faGithub\ \href{https://github.com/Darainer}{Darainer}
-    }\\[0.05cm]
+    \faLinkedin\ \href{https://linkedin.com/in/ryan-j-matthews}{ryan-j-matthews} \quad|\quad
+    \faEnvelope\ \href{mailto:ryanjmatthews@gmail.com}{ryanjmatthews@gmail.com}\\[0.2em]
+    \faMobile\ +49~176~3459~9887 \quad|\quad
+    \faGithub\ \href{https://github.com/Darainer}{Darainer}
+    }\\[0.3cm]
 
-    % --- Summary text ---
-\section{Summary}
-\vspace{-16pt}
-\small
-Product and systems leader with 10+ years of experience in autonomous systems and ADAS development. 
-Proven track record of defining commercially viable product visions, shaping scalable software architectures, and delivering successful customer programs. 
-Unique blend of deep technical expertise in AI, software, and sensors with strong commercial acumen to bridge technology and business impact.
-
-
+    % Inline summary without title
+    {\small
+    Product and systems leader with 10+ years of experience in autonomous systems and ADAS development. Proven track record of defining commercially viable product visions, shaping scalable software architectures, and delivering successful customer programs. Unique blend of deep technical expertise in AI, software, and sensors with strong commercial acumen to bridge technology and business impact.
+    }
 
 \end{minipage}\hfill
 \begin{minipage}[t]{0.27\textwidth}
-  \vspace{0pt}
-  \centering
-  \includegraphics[width=\linewidth]{profile_pic_ryan.png}
+    \vspace{0pt}
+    \centering
+    \includegraphics[width=\linewidth]{profile_pic_ryan.png}
 \end{minipage}
 
-
+\vspace{0.5em}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -93,11 +90,12 @@ Unique blend of deep technical expertise in AI, software, and sensors with stron
 \section{Work Experience}
 
 \begin{joblong}{Program Lead – Perception Software, \textit{Luminar Technologies}}{Oct 2024 -- Present}
-\item Leading commercial and technical aspects of Luminar’s flagship perception software program, guiding delivery toward a vehicle production launch.
+\item Leading commercial and technical aspects of Luminar's flagship perception software program, guiding delivery toward a vehicle production launch.
+\item Managing cross-functional teams to ensure alignment between product vision, technical execution, and customer requirements.
 \end{joblong}
 
 \begin{joblong}{ADAS Solution Architect, \textit{Luminar Technologies}}{Jul 2022 -- Oct 2024}
-\item Provided technical leadership in a growing software department across R\&D and productization of software, SoC, and lidar systems for ADAS/AD.
+\item Provided technical leadership in growing software department across R\&D and productization of software, SoC, and lidar systems for ADAS/AD.
 \item Defined product and architecture boundaries to align the core platform with customer needs.
 \item Focused teams on commercially valuable functionality that resonated with OEMs, driving adoption and reuse.
 \end{joblong}
@@ -137,11 +135,11 @@ Unique blend of deep technical expertise in AI, software, and sensors with stron
 %----------------------------------------------------------------------------------------
 
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-\textbf{B.Eng (Hons), Mechatronic Engineering} & University of Adelaide \\
-& \textit{First Class Honours, Dean's List, Aerospace Project Award} \\[4pt]
-\textbf{Bachelor of Economics} & University of Adelaide \\
-& \textit{Major in Mathematical Modelling and Statistics}
+\begin{tabularx}{\linewidth}{@{}l X r@{}}
+\textbf{B.Eng (Hons), Mechatronic Engineering} & University of Adelaide & \\
+\multicolumn{3}{@{}l@{}}{\hspace{0em}\textit{First Class Honours, Dean's List, Aerospace Project Award}} \\[4pt]
+\textbf{Bachelor of Economics} & University of Adelaide & \\
+\multicolumn{3}{@{}l@{}}{\hspace{0em}\textit{Major in Mathematical Modelling and Statistics}}
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -150,9 +148,9 @@ Unique blend of deep technical expertise in AI, software, and sensors with stron
 
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Programming & C, C++, Python, MATLAB/Simulink \\
-Tooling \& Standards & ISO 26262, ISO 21448 (SOTIF), AUTOSAR C++14, CI/CD \\
-Domains & ADAS/AD, Perception, Lidar, AI, SoC, Product Strategy \\
+Programming & C, C++, Python, MATLAB/Simulink \\[2pt]
+Tooling \& Standards & ISO 26262, ISO 21448 (SOTIF), AUTOSAR C++14, CI/CD \\[2pt]
+Domains & ADAS/AD, Perception, Lidar, AI, SoC, Product Strategy \\[2pt]
 Soft Skills & Product Leadership, Technical Direction, Customer Engagement, Team Building
 \end{tabularx}
 
@@ -162,11 +160,11 @@ Soft Skills & Product Leadership, Technical Direction, Customer Engagement, Team
 
 \section{Further Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-2024 & Deep Learning Specialization — \href{https://www.deeplearning.ai}{DeepLearning.AI} \\
-2023 & Creative Leadership Certificate — \href{https://mvr.de}{MVR.DE} \\
-2022 & Modern C++ Training — \href{https://klaus-iglberger.com}{Klaus Iglberger} \\
-2020 & Professional Scrum Product Owner — \href{https://scrum.org}{Scrum.org} \\
-2017 & Certified Scrum Master — \href{https://scrumalliance.org}{Scrum Alliance} \\
+2024 & Deep Learning Specialization — \href{https://www.deeplearning.ai}{DeepLearning.AI} \\[2pt]
+2023 & Creative Leadership Certificate — \href{https://mvr.de}{MVR.DE} \\[2pt]
+2022 & Modern C++ Training — \href{https://klaus-iglberger.com}{Klaus Iglberger} \\[2pt]
+2020 & Professional Scrum Product Owner — \href{https://scrum.org}{Scrum.org} \\[2pt]
+2017 & Certified Scrum Master — \href{https://scrumalliance.org}{Scrum Alliance} \\[2pt]
 2014 & Project Management Professional (PMP\textsuperscript{\textregistered}) — \href{https://www.pmi.org}{PMI}
 \end{tabularx}
 
